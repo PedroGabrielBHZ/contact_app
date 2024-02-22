@@ -1,0 +1,25 @@
+{% extends 'layout.html' %} {% block content %}
+
+<form action="/contacts/new" method="post">
+    <fieldset>
+        <legend>Contact Values</legend>
+        <div class="table rows">
+            <p>
+                <label for="name">Name</label>
+                <input name="name" id="name" type="text" placeholder="First Name" />
+            </p>
+            <p>
+                <label for="phone">Phone</label>
+                <input name="phone" id="phone" type="text" placeholder="Phone" />
+            </p>
+            <p>
+                <label for="address">address</label>
+                <input name="address" id="address" type="address" placeholder="address" />
+            </p>
+        </div>
+        <button style="padding: 10px 20px; float: right">Save</button>
+    </fieldset>
+</form>
+
+
+{% endblock %}
